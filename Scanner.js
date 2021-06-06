@@ -47,12 +47,7 @@ const fetch = require('node-fetch');
 //const { getParsedCommandLineOfConfigFile } = require("typescript");
 
 const getBrowserData = async (url, timeout) => {
-  const browser = await puppeteer.launch({
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',  
-    ],
-  });
+  const browser = await puppeteer.launch();
   const context = await browser.createIncognitoBrowserContext();
   const page = await context.newPage();
   const data = {};
