@@ -2,11 +2,13 @@ var express = require("express");
 
 var portscanner = require('portscanner');
 
+var port = process.env.PORT || 4400
+
 
 var cors = require('cors');
 const isPortReachable = require('is-port-reachable');
 var app = express();
-app.listen(4400, () => {
+app.listen(port, () => {
   console.log("Server running on port 4400");
 });
 app.use(cors())
