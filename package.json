@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-
     "cors": "^2.8.5",
     "dns": "^0.2.2",
     "emailjs-com": "^2.6.4",
@@ -13,12 +12,15 @@
     "portscanner": "^2.2.0",
     "puppeteer": "^5.5.0",
     "puppeteer-har": "^1.1.2",
-    "qs": "^6.9.6", 
+    "qs": "^6.9.6",
     "tcp-ping": "^0.1.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "14.x"
   },
   "author": "",
   "license": "ISC"

@@ -11,7 +11,7 @@ app.listen(4400, () => {
 });
 app.use(cors())
 
-app.use(express.static(__dirname + '/build'));
+// app.use(express.static(__dirname + '/build'));
 
 
 app.get("/parse", async (req, res, next) => {
@@ -24,14 +24,14 @@ app.get("/parse", async (req, res, next) => {
 
 
 
-app.get("/", async (req, res) => {
-  res.sendFile(__dirname + '/build/index.html');
-});
+// app.get("/", async (req, res) => {
+//   res.sendFile(__dirname + '/build/index.html');
+// });
 
 
-app.get("*", async (req, res) =>{
-  res.sendFile(__dirname+'/build/index.html');
-})
+// app.get("*", async (req, res) =>{
+//   res.sendFile(__dirname+'/build/index.html');
+// })
 const puppeteer = require('puppeteer');
 const PuppeteerHar = require('puppeteer-har');
 const tcpp = require('tcp-ping');
