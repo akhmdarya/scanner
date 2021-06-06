@@ -1,8 +1,8 @@
 var express = require("express");
 
-var portscanner = require('portscanner');
+//var portscanner = require('portscanner');
 
-var port = process.env.PORT || 8080
+var port =  8080;
 
 
 var cors = require('cors');
@@ -45,7 +45,12 @@ const fetch = require('node-fetch');
 //const { getParsedCommandLineOfConfigFile } = require("typescript");
 
 const getBrowserData = async (url, timeout) => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+    ],
+  });
   const context = await browser.createIncognitoBrowserContext();
   const page = await context.newPage();
   const data = {};
