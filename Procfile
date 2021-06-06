@@ -1,1 +1,1 @@
-web: node Scanner.jsg
+web: node Scanner.js
