@@ -15,6 +15,8 @@ app.use(cors())
 
 // app.use(express.static(__dirname + '/build'));
 
+app.get("/", async (req, res) => res.send("hello"))
+
 
 app.get("/parse", async (req, res, next) => {
   const queryObject = req.query.url;
