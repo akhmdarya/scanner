@@ -48,7 +48,7 @@ const getBrowserData = async (url, timeout) => {
   const browser = await puppeteer.launch({
     args: [
       '--no-sandbox',
-      '--disable-setuid-sandbox', 
+      '--disable-setuid-sandbox',  
     ],
   });
   const context = await browser.createIncognitoBrowserContext();
