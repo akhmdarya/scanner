@@ -1,1 +1,1 @@
-worker: node Scanner.js
+web: node Scanner.js
