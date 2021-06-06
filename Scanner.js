@@ -6,7 +6,7 @@ var port = process.env.PORT || 4400
 
 
 var cors = require('cors');
-const isPortReachable = require('is-port-reachable');
+// const isPortReachable = require('is-port-reachable');
 var app = express();
 app.listen(port, () => {
   console.log("Server running on port 4400");
@@ -42,7 +42,7 @@ const qs = require('qs');
 const dns = require('dns');
 
 const fetch = require('node-fetch');
-const { getParsedCommandLineOfConfigFile } = require("typescript");
+//const { getParsedCommandLineOfConfigFile } = require("typescript");
 
 const getBrowserData = async (url, timeout) => {
   const browser = await puppeteer.launch();
