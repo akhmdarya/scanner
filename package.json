@@ -17,6 +17,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "start": "node Scanner.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
