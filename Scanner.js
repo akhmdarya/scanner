@@ -2,7 +2,7 @@ var express = require("express");
 
 var portscanner = require('portscanner');
 
-var port = process.env.PORT || 4400
+var port = process.env.PORT || 8080
 
 
 var cors = require('cors');
